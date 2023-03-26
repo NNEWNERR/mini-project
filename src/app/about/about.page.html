@@ -1,9 +1,48 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>about</ion-title>
+    <ion-title style="color: greenyellow">About Me</ion-title>
+    <ion-buttons slot="end" (click)="GoToHomePage()"
+      ><ion-button>Home</ion-button></ion-buttons
+    >
+    <ion-buttons style="color: greenyellow" slot="end" (click)="GoToAboutPage()"
+      ><ion-button>About Me</ion-button></ion-buttons
+    >
+    <ion-buttons slot="end" (click)="GoToSkillsPage()"
+      ><ion-button>Skills</ion-button></ion-buttons
+    >
+    <ion-buttons slot="end" (click)="GoToContactPage()"
+      ><ion-button>Contact</ion-button></ion-buttons
+    >
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <ion-grid style="max-width: 50rem; margin: 0 auto; margin-top: 5rem">
+    <ion-row>
+      <ion-col size-md="6">
+        <ion-img
+          src="..\assets\pngwing.com.png"
+          style="height: 250px; width: 250px; margin: 30px; margin-left: 100px"
+        ></ion-img>
+      </ion-col>
+      <ion-col size-md="6">
+        <div style="margin: 0 auto">
+          <div style="font-size: 1rem; color: greenyellow">About Me</div>
+          <div style="margin-top: 10px; font-size: 2rem; color: #000">
+            Hi, My name is <br />
+            Newner <br />
+            <div style="margin-top: 10px; font-size: 1rem; color: #000">
+              I am a deverloper I'm hired to write a website or be a programmer
+            </div>
+          </div>
+          <div style="margin-top: 10px">
+            <ion-button
+              class="ion-color ion-color-success ion-text-color-light"
+              (click)="GoToSkillsPage()"
+              >My Skills</ion-button
+            >
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

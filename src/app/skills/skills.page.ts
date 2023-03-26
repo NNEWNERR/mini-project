@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.page.html',
-  styleUrls: ['./about.page.scss'],
+  selector: 'app-skills',
+  templateUrl: './skills.page.html',
+  styleUrls: ['./skills.page.scss'],
 })
-export class AboutPage implements OnInit {
+export class SkillsPage implements OnInit {
+
   constructor(public navCtrl: NavController) {}
 
   // สร้าง function เพื่อเปิดหน้าต่างใหม่
@@ -21,9 +22,6 @@ export class AboutPage implements OnInit {
   }
   GoToContactPage() {
     this.navCtrl.navigateForward(['/contact']);
-  }
-  goBack() {
-    this.navCtrl.navigateBack('');
   }
   ngOnInit() {
   }
